@@ -47,3 +47,6 @@ count: build
 # count: see section 5 of the README
 # OUTPUTS is set by the wildcard above
 # run 'make help' for all targets
+# count: see section 5 of the README
+# OUTPUTS is set by the wildcard above
+# run 'make help' for all targets
