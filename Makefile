@@ -40,5 +40,7 @@ ci: clean check test  ## the build server entry point
 help:  ## show this help
 	@grep -E '^[a-z][a-zA-Z_-]*:.*?## ' $(MAKEFILE_LIST) \
 	 | sed 's/:.*## /\t/' | column -t -s "$$(printf '\t')"
-count: build ## count the source files
+
+count: build
 	@ls -1 $(SRC_DIR)/*.txt | wc -l
+	@wc -w $(OUTPUTS) | tail -1
